@@ -1,16 +1,52 @@
+# ----------------------------
 # Python
+# ----------------------------
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 *.pyd
+*.pyo
+*.pylint.d
+*.mypy_cache/
+*.pytest_cache/
+*.coverage
+*.egg-info/
+dist/
+build/
+*.env
 venv/
 .env
 
+# ----------------------------
 # Docker
+# ----------------------------
 *.log
 docker-compose.override.yml
+docker-compose.override.yaml
+*.pid
+*.sock
 
-# IDE / editor
+# ----------------------------
+# VS Code / IDEs
+# ----------------------------
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 *.swp
+
+# ----------------------------
+# Jupyter Notebook
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# System files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Media / uploads (optional)
+# ----------------------------
+media/
+uploads/
