@@ -1,0 +1,43 @@
+cat > app/static/index.html << 'EOF' <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Elimu SmartPlan STEM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Elimu SmartPlan STEM</h1>
+            <p class="subtitle">AI-generated lesson plans aligned with Kenya's CBE framework.</p>
+
+            <form id="lessonForm">
+                <label>Topic:</label>
+                <input type="text" id="topic" placeholder="e.g. Photosynthesis" required>
+
+                <label>Grade:</label>
+                <input type="text" id="grade" placeholder="e.g. Grade 8" required>
+
+                <label>Learning Objectives:</label>
+                <textarea id="objectives" rows="4" placeholder="e.g. Understand how plants make food using sunlight"
+                    required></textarea>
+
+                <button type="submit">Generate Lesson Plan</button>
+            </form>
+
+            <div id="loading" class="hidden">⏳ Generating lesson plan...</div>
+
+            <div id="output" class="hidden">
+                <h2>Generated Lesson Plan</h2>
+                <pre id="lessonText"></pre>
+                <button id="downloadBtn">⬇️ Download as Text</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+    </html>
+    EOF

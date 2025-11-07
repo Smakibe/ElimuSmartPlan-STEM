@@ -1,13 +1,5 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-dotenv
-byllm==0.4.5
-requests
-redis
-pydantic
-fakeredis
-httpx
-pydantic-settings
-jaseci==2.0.0
-jaclang==0.8.10
-python-multipart
+google-generativeai==0.8.5
+pydantic 

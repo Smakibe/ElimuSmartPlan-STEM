@@ -1,15 +1,13 @@
-<!doctype html>
-<html>
+<div class="container">
+    <h1 class="title">Elimu STEM Lesson Master</h1>
+    <p class="subtitle">Empowering teachers to create interactive, competency-based STEM lessons with AI.</p>
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>ElimuSmartPlan</title>
-    <script type="module" src="/src/main.jsx"></script>
-</head>
+    <div class="form">
+        <input type="text" id="topic" placeholder="Enter Lesson Topic" />
+        <input type="text" id="grade" placeholder="Enter Grade Level" />
+        <textarea id="objectives" placeholder="Enter Learning Objectives"></textarea>
+        <button id="generate">✨ Generate Lesson</button>
+    </div>
 
-<body class="bg-gradient-to-b from-indigo-50 to-white min-h-screen">
-    <div id="root"></div>
-</body>
-
-</html>
+    <div id="lessonOutput" class="lesson-card"></div>
+</div>
